@@ -42,7 +42,9 @@ const CartItem = ({ id, img, title, price, amount, porc, Mainphoto, secondPhoto,
           В Корзину
         </button>
         <div className='remove'>
-          <img className='icon' src={icon} alt='' />
+          <img onClick={() => {
+            dispatch(removeItem(id));
+          }} className='icon' src={icon} alt='' />
         <button
           className='delete'
           onClick={() => {

@@ -8,10 +8,12 @@ const Navbar = () => {
       <nav>
         <div className='nav-center'>
           <h3>Избранное</h3>
-          <div className='nav-container'>
-            <CartIcon />
-            <div className='amount-container'>
-              <p className='total-amount'>{amount}</p>
+          <div className='sticky'>
+            <div className='nav-container'>
+              <CartIcon />
+              <div className='amount-container'>
+                <p className='total-amount'>{amount}</p>
+              </div>
             </div>
           </div>
         </div>
