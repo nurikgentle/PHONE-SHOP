@@ -114,6 +114,8 @@ nav h3 {
   position: relative;
   margin-left: 32.9%;
   z-index: 5;
+  width: 31px;
+  background-color: white;
 }
 nav svg {
   width: 40px;
@@ -351,6 +353,11 @@ h4 {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 628px) {
+  .nav-container {
+    margin-left: 300%;
+  }
+}
 @media (max-width: 560px) {
   .cart-item {
     margin-left: 0;
@@ -359,5 +366,5 @@ h4 {
 
 .sticky {
   position: fixed;
-  left: 450px;
+  left: 50%;
 }
